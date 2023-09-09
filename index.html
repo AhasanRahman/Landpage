@@ -23,28 +23,48 @@
             </ul>
         
     
-    <button type="button"><span></span></button>
+    <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
 </nav>
 <div class="drone-container">
-    <img src="drone.jpg" class="drone">
-    <img src="Mini-Drones.jpg" class="minidrone">
+    <!-- <img src="drone.jpg" class="drone">
+        
     <img src="game.jpg" class="game">
-    <img src="airbuds.jpg" class="airbuds">
+    <img src="airbuds.jpg" class="airbuds"> -->
+    <img src="Mini-Drones.jpg" class="minidrone" id="mini">
 
-</div><br>
+</div><br><br>
 
 <div class="text-container">
    <h1>Latest<br> Gadget</h1>
    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum magnam accusamus eius recusandae dolore? Vel, explicabo. Obcaecati nam laudantium quae, optio facilis
      qui fuga rem ullam nemo reprehenderit eum architecto!</p>
-     <a href="#">Check All Collection</a>
+     <a href="#new collection">Check All Collection</a>
      <div class="control">
+
         <p>04</p>
         <div class="line"> <span></span></div>
         <p>05</p>
+
      </div>
+     <div>
+        <p>8</p>
+        <div class="line"><span></span></div>
+        <p>9</p>
+     </div>
+     
 
 </div>
 </div>
+
+<script>
+    var btn = document.getElementById("btn");
+    var mini = document.getElementById("mini");
+
+    function toggleBtn(){
+
+        btn.classList.toggle("active"); 
+        mini.classList.toggle("on"); 
+    }
+</script>
 </body>
 </html>

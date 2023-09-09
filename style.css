@@ -42,17 +42,21 @@ nav ul li a{
     color: #fff;
     font-size: 25px;
 }
+
 button{
     background:#efefef ;
     height: 30px;
-    width: 70px;
-    border-radius: 25px;
+    width: 60px;
+    border-radius: 20px;
     border: 0;
+    outline: 0;
     cursor: pointer;
+    transition: background 0.5s;
 }
 a:hover{
     background-color: skyblue;
 }
+
 button span {
     display: block;
     background:gray;
@@ -60,17 +64,14 @@ button span {
     width: 25px;
     border-radius: 50%;
     margin-left: 2px;
+    transition: background 0.5s, margin-left 0.5s;
 }
  
-.drone{
+/* .drone{
     height:300px ;
     width: 280px;
 }
-.minidrone{
-    height: 300px;
-    width: 280px;
-    
-}
+
 .game{
     height: 300px;
     width: 280px;
@@ -78,6 +79,12 @@ button span {
 .airbuds{
     height: 300px;
     width: 280px;
+} */
+.minidrone{
+    height: 300px;
+    width: 280px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 .text-container{
     max-width: 600px;
@@ -95,9 +102,11 @@ button span {
     display: inline-block;
     color: #fff;
     font-size: 18px;
-    margin-top: 30px;
+    margin-top: 40px;
     border-radius: 30px;
  }
+ 
+ 
  .control{
     display:flex;
     align-items: center;
@@ -114,8 +123,20 @@ button span {
 .control .line span {
     width: 50%;
     height: 8px;
-    
+    margin-top: -2px;
     border-radius: 4px;
     background:cyan ;
     display:block ;
+}
+.active{
+background:yellowgreen;
+
+}
+.active span{
+    background: #fff;
+    margin-left: 31px;
+
+}
+.on{
+    opacity: 1;
 }
